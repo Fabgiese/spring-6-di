@@ -1,4 +1,4 @@
-package guru.springframework.dependency.injection.controllers;
+package guru.springframework.spring6di.controllers;
 
 import org.springframework.stereotype.Controller;
 

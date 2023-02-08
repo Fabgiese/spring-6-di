@@ -1,15 +1,15 @@
-package guru.springframework.dependency.injection;
+package guru.springframework.spring6di;
 
-import guru.springframework.dependency.injection.controllers.MyController;
+import guru.springframework.spring6di.controllers.MyController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class DependencyInjectionApplication {
+public class Spring6DiApplication {
 
     public static void main(String[] args) {
-        ApplicationContext ctx = SpringApplication.run(DependencyInjectionApplication.class, args);
+        ApplicationContext ctx = SpringApplication.run(Spring6DiApplication.class, args);
         MyController myController = ctx.getBean(MyController.class);
         System.out.println("Inner main method");
         System.out.println(myController.sayHello());
